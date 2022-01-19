@@ -1,0 +1,15 @@
+{
+  "Id": "Policy1462221401547",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1462221025865",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::coffee.weissmann.io/*",
+      "Principal": "*"
+    }
+  ]
+}
