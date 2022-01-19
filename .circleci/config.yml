@@ -30,9 +30,7 @@ jobs:
           command: |
             npm set prefix=/home/circleci/npm && echo 'export PATH=$HOME/circleci/npm/bin:$PATH' >> /home/circleci/.bashrc
             npm install -g @vue/cli
-      - run:
-        name: "install node"
-        command: npm install
+      - run: npm install
       - save_cache:
           paths:
             - ./node_modules
