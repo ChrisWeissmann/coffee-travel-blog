@@ -36,5 +36,6 @@ workflows:
     jobs:
       - node/run:
             npm-run: install
+      - node/run:
             npm-run: generate 
       - npm-job
