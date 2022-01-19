@@ -28,8 +28,7 @@ jobs:
       - run:
           name: Installing vue globally and caching dependencies
           command: |
-            npm set prefix=/home/circleci/npm && echo 'export PATH=$HOME/circleci/npm/bin:$PATH' >> /home/circleci/.bashrc
-            npm install -g @vue/cli
+            npm set prefix=/home/circleci/npm && echo 'export PATH=$HOME/circleci/npm/bin:$PATH' >> /home/circleci/.bashrc; npm install -g @vue/cli            
       - run: npm install
       - save_cache:
           paths:
