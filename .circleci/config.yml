@@ -25,6 +25,7 @@ jobs:
       - image: cimg/base:stable
     steps:
       - node/install
+
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
@@ -33,6 +34,7 @@ workflows:
       - say-hello
   npm-workflow:
     jobs:
-      - npm-job
       - node/run:
+            npm-run: install
             npm-run: generate 
+      - npm-job
