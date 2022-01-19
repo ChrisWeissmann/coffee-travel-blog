@@ -24,7 +24,21 @@ jobs:
       # replace with your preferred image
       - image: cimg/base:stable
     steps:
-      - node/install
+      - checkout
+      - run:
+          name: Installing vue globally and caching dependencies
+          command: |
+            npm set prefix=/home/circleci/npm && echo 'export PATH=$HOME/circleci/npm/bin:$PATH' >> /home/circleci/.bashrc
+            npm install -g @vue/cli
+      - run:
+        name: "install node"
+        command: npm install
+      - save_cache:
+          paths:
+            - ./node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run: npm run generate
+      - run: gulp deploy
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
@@ -34,8 +48,4 @@ workflows:
       - say-hello
   npm-workflow:
     jobs:
-      - node/run:
-            npm-run: install
-      - node/run:
-            npm-run: generate 
       - npm-job
