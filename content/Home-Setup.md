@@ -1,17 +1,37 @@
 ---
-title: My first blog post
-image: first-post.jpg
+title: The Home Setup
+image: gaggia-home.jpg
 tags:
-  - Coffee
-  - Hand-grinder
+  - Gaggia-Classic-Pro
+  - Home-setup
 ---
 
+# My Home Setup
 
-# h1 Heading
+## Grinder
+- Picture
 
-## h2 Heading
+## Bialetti
+- rough history
 
-### h3 Heading
+### Bialetti old
+- Picture
+- Grounds
+
+### Bialetti new
+- Picture with induction adapter
+- Grounds
+
+## French Press
+- Grounds
+
+## Espresso Machine
+
+> I must offer a word of caution here: don't invest in an espresso machine at home unless you want a new hobby.
+>
+> ~James Hoffmann
+
+## Scale
 
 #### h4 Heading
 
