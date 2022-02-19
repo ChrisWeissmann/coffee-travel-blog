@@ -34,7 +34,12 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxt/content", "@nuxtjs/axios", "@nuxtjs/auth-next"],
+  modules: [
+    "nuxt-content-git",
+    "@nuxt/content",
+    "@nuxtjs/axios",
+    "@nuxtjs/auth-next",
+  ],
   content: {
     // Options
   },
@@ -71,10 +76,10 @@ export default {
       },
     },
     redirect: {
-      login: '/',
-      logout: '/',
-      home: '/',
-      callback: '/'
+      login: "/",
+      logout: "/",
+      home: "/",
+      callback: "/",
     },
   },
 };
