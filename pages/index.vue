@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-7xl font-black text-center">Crisps Travel Coffee Blog</h1>
+    <h1 class="text-7xl font-black text-center">Chris's Coffee Blog</h1>
     <ul class="grid grid-cols-3 gap-8 mt-8">
       <PostPreview v-for="post in posts" :key="post.slug" :post="post"></PostPreview>
     </ul>

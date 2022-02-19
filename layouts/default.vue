@@ -1,7 +1,7 @@
 <template>
-  <div class="min-h-screen w-screen pt-2">
+  <div class="flex flex-col min-h-screen w-screen pt-2 justify-between">
     <TheHeader />
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-7xl mx-auto mb-auto">
       <Nuxt />
     </div>
     <TheFooter />
