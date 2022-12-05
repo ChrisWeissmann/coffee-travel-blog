@@ -26,7 +26,7 @@
     "@nuxtjs/vuetify": "^1.12.3",
     "concurrent-transform": "^1.0.0",
     "gulp": "^4.0.2",
-    "gulp-awspublish": "^4.1.2",
+    "gulp-awspublish": "^7.0.0",
     "gulp-cloudfront-invalidate-aws-publish": "^1.0.0",
     "postcss": "^8.4.4",
     "prettier": "^2.5.1"
